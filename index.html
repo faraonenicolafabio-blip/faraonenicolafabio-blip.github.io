@@ -3,170 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI & Biohacking System | Faraone Nicola Fabio</title>
+    <title>Personal Finance Pro | Faraone Nicola Fabio</title>
     <style>
         :root {
-            --bg: #09090b;
-            --card-bg: #141417;
-            --accent: #00ffaa; 
-            --text: #ffffff;
-            --text-muted: #8e8e93;
-            --border: #222226;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #22c55e;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
         }
-        body {
-            background-color: var(--bg);
-            color: var(--text);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            box-sizing: border-box;
-        }
-        .wrapper {
-            max-width: 480px;
-            width: 100%;
-            padding: 30px 20px;
-            text-align: center;
-        }
-        .tag {
-            background: rgba(0, 255, 170, 0.1);
-            color: var(--accent);
-            padding: 6px 14px;
-            border-radius: 30px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 2.4rem;
-            font-weight: 800;
-            line-height: 1.15;
-            margin: 0 0 12px 0;
-            letter-spacing: -1px;
-        }
-        h1 span { color: var(--accent); }
-        .desc {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-            line-height: 1.5;
-            margin-bottom: 30px;
-        }
-        .product-box {
-            background: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 24px;
-            text-align: left;
-            margin-bottom: 30px;
-        }
-        .box-title {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #fff;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 10px;
-        }
-        .item {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 18px;
-            font-size: 0.95rem;
-            line-height: 1.4;
-        }
-        .item:last-child { margin-bottom: 0; }
-        .icon { color: var(--accent); margin-right: 12px; font-size: 1.1rem; flex-shrink: 0; }
-        .item-text { color: var(--text); }
-        .item-text strong { color: #fff; display: inline; }
-        .price-tag {
-            font-size: 2.4rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 12px;
-        }
-        .price-tag span {
-            font-size: 1.2rem;
-            text-decoration: line-through;
-            color: var(--text-muted);
-            font-weight: 500;
-        }
-        .buy-button {
-            display: block;
-            background: var(--accent);
-            color: #000000;
-            text-decoration: none;
-            padding: 18px;
-            border-radius: 12px;
-            font-size: 1.1rem;
-            font-weight: 700;
-            box-shadow: 0 10px 25px rgba(0, 255, 170, 0.25);
-            transition: transform 0.1s;
-        }
-        .buy-button:active { transform: scale(0.98); }
-        .secure-text {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-top: 14px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 6px;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            line-height: 1.4;
-        }
+        body { background-color: var(--bg); color: var(--text); font-family: sans-serif; display: flex; justify-content: center; padding: 40px 20px; }
+        .wrapper { max-width: 500px; width: 100%; text-align: center; }
+        h1 { font-size: 2rem; margin-bottom: 10px; }
+        .price { font-size: 2.5rem; font-weight: bold; margin: 20px 0; color: var(--accent); }
+        .box { background: var(--card-bg); padding: 20px; border-radius: 12px; text-align: left; margin-bottom: 20px; }
+        .btn { display: block; background: var(--accent); color: white; padding: 20px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.2rem; }
     </style>
 </head>
 <body>
-
     <div class="wrapper">
-        <div class="tag">Prodotto Digitale Innovativo 2026</div>
+        <h1>Personal Finance Pro Suite</h1>
+        <p>Non vendo promesse di ricchezza. Vendo il sistema di controllo che utilizzo personalmente per monitorare entrate, uscite e risparmi.</p>
         
-        <h1>AI & Biohacking <span>System</span></h1>
-        <p class="desc">Il protocollo definitivo di Faraone Nicola Fabio per raddoppiare la tua produttività e ottimizzare la tua energia mentale senza sforzo.</p>
-        
-        <div class="product-box">
-            <div class="box-title">Cosa ricevi istantaneamente:</div>
-            
-            <div class="item">
-                <span class="icon">⚡</span>
-                <span class="item-text"><strong>Guida al Biohacking:</strong> Sonno, focus e focus profondo guidati dalla scienza.</span>
-            </div>
-            
-            <div class="item">
-                <span class="icon">🤖</span>
-                <span class="item-text"><strong>L'Hub dei Prompt AI:</strong> Copia e incolla le istruzioni segrete per delegare il lavoro all'AI.</span>
-            </div>
-            
-            <div class="item">
-                <span class="icon">📊</span>
-                <span class="item-text"><strong>SOP di Automazione:</strong> Come liberare fino a 15 ore a settimana sul pilota automatico.</span>
-            </div>
+        <div class="box">
+            <p><strong>Cosa ricevi:</strong></p>
+            <p>✓ Modello Google Sheets professionale (automatizzato).</p>
+            <p>✓ Sistema di categorizzazione spese intelligente.</p>
+            <p>✓ Dashboard di riepilogo mensile.</p>
         </div>
-        
-        <div class="price-tag"><span>€49</span> €19</div>
-        
-        <!-- Sostituirai il simbolo '#' con il tuo link Gumroad quando lo avrai pronto -->
-        <a href="#" class="buy-button">Scarica il Sistema Ora</a>
-        <div class="secure-text">🔒 Consegna immediata del file dopo il pagamento</div>
-        
-        <footer>
-            &copy; 2026 Faraone Nicola Fabio. Tutti i diritti riservati.
-        </footer>
-    </div>
 
+        <div class="price">€19</div>
+        <a href="#" class="btn">Acquista il Sistema</a>
+        
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 20px;">
+            &copy; 2026 Faraone Nicola Fabio. Prodotto digitale ad uso personale.
+        </p>
+    </div>
 </body>
 </html>
