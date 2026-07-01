@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faraone Nicola Fabio | Soluzioni Digitali</title>
+    <title>Faraone Nicola Fabio | Risorse Consigliate</title>
     <style>
         :root {
             --bg-color: #0b0b0c;
-            --accent-color: #d4af37; /* Oro Premium */
+            --accent-color: #d4af37;
+            --card-bg: #141416;
+            --border-color: #232326;
             --text-color: #ffffff;
             --text-secondary: #a0a0a5;
         }
@@ -22,79 +24,57 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            text-align: center;
             box-sizing: border-box;
         }
         .container {
-            max-width: 600px;
+            max-width: 500px;
+            width: 100%;
             padding: 40px 20px;
-        }
-        .badge {
-            background: rgba(212, 175, 55, 0.1);
-            color: var(--accent-color);
-            padding: 6px 16px;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 24px;
+            text-align: center;
         }
         h1 {
-            font-size: 2.8rem;
+            font-size: 2.2rem;
             font-weight: 800;
-            line-height: 1.2;
-            margin: 0 0 16px 0;
-            letter-spacing: -1px;
+            margin-bottom: 10px;
         }
-        h1 span {
-            color: var(--accent-color);
-        }
-        p.subtitle {
+        h1 span { color: var(--accent-color); }
+        .subtitle {
             color: var(--text-secondary);
-            font-size: 1.25rem;
-            line-height: 1.6;
-            margin: 0 0 32px 0;
-        }
-        .features {
-            text-align: left;
-            background: #141416;
-            border: 1px solid #232326;
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 32px;
-        }
-        .feature-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 12px;
-            font-size: 1.05rem;
-        }
-        .feature-item:last-child { margin-bottom: 0; }
-        .feature-icon {
-            color: var(--accent-color);
-            margin-right: 12px;
-            font-weight: bold;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: #000000;
-            text-decoration: none;
-            padding: 18px 36px;
             font-size: 1.1rem;
-            font-weight: bold;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3);
-            transition: transform 0.2s, box-shadow 0.2s;
+            margin-bottom: 40px;
         }
-        .cta-button:active {
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .affiliate-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: left;
+            text-decoration: none;
+            color: var(--text-color);
+            display: block;
+            transition: transform 0.2s;
+        }
+        .affiliate-card:active {
             transform: scale(0.98);
         }
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 4px;
+        }
+        .card-desc {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
         .footer {
-            margin-top: 40px;
-            font-size: 0.85rem;
+            margin-top: 50px;
+            font-size: 0.8rem;
             color: var(--text-secondary);
         }
     </style>
@@ -102,23 +82,31 @@
 <body>
 
     <div class="container">
-        <div class="badge">Disponibilità Limitata</div>
+        <h1>Faraone Nicola <span>Fabio</span></h1>
+        <p class="subtitle">I migliori strumenti, libri e tecnologie selezionati per ottimizzare il tuo business.</p>
         
-        <h1>Strategia, Azione, <span>Risultati.</span></h1>
-        
-        <p class="subtitle">Trasformiamo idee complesse in realtà digitali ad alte prestazioni. Il tuo prossimo livello inizia da qui.</p>
-        
-        <div class="features">
-            <div class="feature-item"><span class="feature-icon">✓</span> Analisi personalizzata guidata dai dati</div>
-            <div class="feature-item"><span class="feature-icon">✓</span> Ottimizzazione dei processi e automazione</div>
-            <div class="feature-item"><span class="feature-icon">✓</span> Posizionamento premium sul mercato</div>
+        <div class="links-container">
+            <!-- LINK 1 -->
+            <a href="https://www.amazon.it" target="_blank" class="affiliate-card">
+                <div class="card-title">Hardware & Tech Top di Gamma ↗</div>
+                <div class="card-desc">I dispositivi e i computer che utilizzo ogni giorno per la massima produttività.</div>
+            </a>
+            
+            <!-- LINK 2 -->
+            <a href="https://www.amazon.it" target="_blank" class="affiliate-card">
+                <div class="card-title">Letture di Business Essenziali ↗</div>
+                <div class="card-desc">I libri fondamentali che hanno cambiato il mio modo di vedere il mercato finanziario.</div>
+            </a>
+
+            <!-- LINK 3 -->
+            <a href="https://www.amazon.it" target="_blank" class="affiliate-card">
+                <div class="card-title">Software e Automazioni AI ↗</div>
+                <div class="card-desc">Le migliori piattaforme cloud per delegare il lavoro ripetitivo all'intelligenza artificiale.</div>
+            </a>
         </div>
         
-        <!-- Puoi cambiare "tel:#" con la tua mail o il tuo link social più avanti -->
-        <a href="mailto:tua-email@esempio.com" class="cta-button">Prenota una Sessione Strategica</a>
-        
         <div class="footer">
-            &copy; 2026 Faraone Nicola Fabio. Tutti i diritti riservati.
+            &copy; 2026 Faraone Nicola Fabio. Link in affiliazione commerciale.
         </div>
     </div>
 
