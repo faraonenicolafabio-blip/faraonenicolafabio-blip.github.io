@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI & Productivity Toolkit | Faraone Nicola Fabio</title>
+    <title>AI & Biohacking System | Faraone Nicola Fabio</title>
     <style>
         :root {
-            --bg: #0c0c0e;
-            --card-bg: #16161a;
-            --accent: #38bdf8; /* Un azzurro tech sobrio, molto più istituzionale e meno "hype" del verde neon */
-            --text: #f4f4f5;
-            --text-muted: #a1a1aa;
-            --border: #27272a;
+            --bg: #09090b;
+            --card-bg: #141417;
+            --accent: #00ffaa; 
+            --text: #ffffff;
+            --text-muted: #8e8e93;
+            --border: #222226;
         }
         body {
             background-color: var(--bg);
@@ -27,134 +27,144 @@
             box-sizing: border-box;
         }
         .wrapper {
-            max-width: 500px;
+            max-width: 480px;
             width: 100%;
-            padding: 40px 20px;
-            text-align: left; /* Allineamento a sinistra per renderlo più simile a un report/articolo serio */
+            padding: 30px 20px;
+            text-align: center;
         }
-        .author-tag {
+        .tag {
+            background: rgba(0, 255, 170, 0.1);
             color: var(--accent);
-            font-size: 0.9rem;
-            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 12px;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 20px;
         }
         h1 {
-            font-size: 2.2rem;
+            font-size: 2.4rem;
             font-weight: 800;
-            line-height: 1.2;
-            margin: 0 0 16px 0;
-            letter-spacing: -0.5px;
+            line-height: 1.15;
+            margin: 0 0 12px 0;
+            letter-spacing: -1px;
         }
-        .intro-text {
+        h1 span { color: var(--accent); }
+        .desc {
             color: var(--text-muted);
-            font-size: 1.05rem;
-            line-height: 1.6;
-            margin-bottom: 32px;
-        }
-        .disclaimer-box {
-            background: rgba(56, 189, 248, 0.05);
-            border-left: 3px solid var(--accent);
-            padding: 16px;
-            margin-bottom: 32px;
-            font-size: 0.95rem;
+            font-size: 1.1rem;
             line-height: 1.5;
-            color: var(--text-muted);
+            margin-bottom: 30px;
         }
         .product-box {
             background: var(--card-bg);
             border: 1px solid var(--border);
-            border-radius: 12px;
+            border-radius: 16px;
             padding: 24px;
-            margin-bottom: 32px;
+            text-align: left;
+            margin-bottom: 30px;
         }
         .box-title {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 700;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
             color: #fff;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
         }
         .item {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 14px;
+            margin-bottom: 18px;
             font-size: 0.95rem;
-            line-height: 1.5;
+            line-height: 1.4;
         }
         .item:last-child { margin-bottom: 0; }
-        .bullet { color: var(--accent); margin-right: 12px; font-weight: bold; }
-        .price-section {
-            text-align: center;
-            margin-bottom: 24px;
-        }
+        .icon { color: var(--accent); margin-right: 12px; font-size: 1.1rem; flex-shrink: 0; }
+        .item-text { color: var(--text); }
+        .item-text strong { color: #fff; display: inline; }
         .price-tag {
-            font-size: 2.2rem;
+            font-size: 2.4rem;
             font-weight: 800;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+        .price-tag span {
+            font-size: 1.2rem;
+            text-decoration: line-through;
+            color: var(--text-muted);
+            font-weight: 500;
         }
         .buy-button {
             display: block;
             background: var(--accent);
             color: #000000;
             text-decoration: none;
-            padding: 16px;
-            border-radius: 8px;
-            font-size: 1.05rem;
+            padding: 18px;
+            border-radius: 12px;
+            font-size: 1.1rem;
             font-weight: 700;
-            text-align: center;
-            transition: opacity 0.2s;
+            box-shadow: 0 10px 25px rgba(0, 255, 170, 0.25);
+            transition: transform 0.1s;
         }
-        .buy-button:active { opacity: 0.9; }
+        .buy-button:active { transform: scale(0.98); }
+        .secure-text {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
         footer {
             margin-top: 40px;
             font-size: 0.8rem;
             color: var(--text-muted);
-            text-align: center;
-            border-top: 1px solid var(--border);
-            padding-top: 20px;
+            line-height: 1.4;
         }
     </style>
 </head>
 <body>
 
     <div class="wrapper">
-        <div class="author-tag">Raccolta Risorse Curata da Faraone Nicola Fabio</div>
+        <div class="tag">Prodotto Digitale Innovativo 2026</div>
         
-        <h1>AI & Productivity Toolkit</h1>
-        
-        <p class="intro-text">
-            Non serve reinventare la ruota per essere efficienti. Questa pagina nasce con un obiettivo pratico: raggruppare, ordinare e rendere immediatamente applicabili i migliori protocolli di gestione del tempo e i prompt di Intelligenza Artificiale che fanno risparmiare ore di lavoro ogni settimana.
-        </p>
-
-        <div class="disclaimer-box">
-            <strong>Nota di trasparenza:</strong> Questo manuale non contiene formule segrete o promesse di guadagno. Non sono uno scienziato né un medico. Sono un appassionato di tecnologia che ha studiato la documentazione scientifica disponibile (Andrew Huberman, tecniche MIT) e ha testato sul campo decine di automazioni AI, selezionando solo ciò che funziona davvero e scartando il fumo.
-        </div>
+        <h1>AI & Biohacking <span>System</span></h1>
+        <p class="desc">Il protocollo definitivo di Faraone Nicola Fabio per raddoppiare la tua produttività e ottimizzare la tua energia mentale senza sforzo.</p>
         
         <div class="product-box">
-            <div class="box-title">Cosa contiene il Toolkit digitale (PDF):</div>
+            <div class="box-title">Cosa ricevi istantaneamente:</div>
+            
             <div class="item">
-                <span class="bullet">✓</span> 
-                <span><strong>Sintesi dei Protocolli Scientifici:</strong> Una guida schematica per gestire i picchi di energia diurni (esposizione alla luce, timing della caffeina e pause strutturate).</span>
+                <span class="icon">⚡</span>
+                <span class="item-text"><strong>Guida al Biohacking:</strong> Sonno, focus e focus profondo guidati dalla scienza.</span>
             </div>
+            
             <div class="item">
-                <span class="bullet">✓</span> 
-                <span><strong>Istruzioni Pronte per AI (Prompt):</strong> Comandi esatti pronti da copiare e incollare su ChatGPT o Gemini per riassumere testi, organizzare appunti sparsi e velocizzare le risposte scritte.</span>
+                <span class="icon">🤖</span>
+                <span class="item-text"><strong>L'Hub dei Prompt AI:</strong> Copia e incolla le istruzioni segrete per delegare il lavoro all'AI.</span>
             </div>
+            
             <div class="item">
-                <span class="bullet">✓</span> 
-                <span><strong>Mappa delle Automazioni:</strong> Un elenco delle applicazioni gratuite utili a ridurre il tempo speso in compiti ripetitivi.</span>
+                <span class="icon">📊</span>
+                <span class="item-text"><strong>SOP di Automazione:</strong> Come liberare fino a 15 ore a settimana sul pilota automatico.</span>
             </div>
         </div>
         
-        <div class="price-section">
-            <div class="price-tag">€19</div>
-        </div>
+        <div class="price-tag"><span>€49</span> €19</div>
         
-        <a href="#" class="buy-button">Accedi al Toolkit Digitale</a>
+        <!-- Sostituirai il simbolo '#' con il tuo link Gumroad quando lo avrai pronto -->
+        <a href="#" class="buy-button">Scarica il Sistema Ora</a>
+        <div class="secure-text">🔒 Consegna immediata del file dopo il pagamento</div>
         
         <footer>
-            &copy; 2026 Faraone Nicola Fabio. Tutti i diritti riservati. <br>
-            Il manuale viene consegnato istantaneamente in formato PDF dopo l'acquisto.
+            &copy; 2026 Faraone Nicola Fabio. Tutti i diritti riservati.
         </footer>
     </div>
 
